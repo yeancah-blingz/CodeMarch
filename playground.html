@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .span-grid{
+            grid-column: 1 / span 2;
+        }
+        .grid-items{
+            display: grid;
+            gap: 10px;
+            background-color: aquamarine;
+            grid-template-columns: auto auto auto auto auto auto;
+            padding: 10px;
+            padding: 10px;
+        }
+        .grid-items > div{
+            border: 2px solid green;
+            margin: 0;
+            text-align: center;
+        }
+        #first{
+            grid-area: 1 / 2 / 5 / 6;
+        }
+        .item1{ grid-area: header; }
+        .item2{ grid-area: main; }
+        .item3{ grid-area: menu; }
+        .item4{ grid-area: right; }
+        .item5{ grid-area: footer; }
+        .grid-name{
+            display:grid;
+            background-color: aqua;
+            gap: 10px;
+            grid-template-areas: 'header header header header header header'
+            'menu main main main main right'
+            'menu footer footer footer footer footer';
+        }
+        .grid-name > div{
+            text-align: center;
+            border: 1px solid green;
+        }
+        .column{
+            margin-top: 10px;
+            border: 2px solid red;
+            padding: 10px;
+            float: left;
+        }
+        .middle{
+            width: 40%;
+        }
+        .side{
+            width: 25%;
+        }
+        .row::after {
+            display: table;
+            content: "";
+            clear: both;
+        }
+        @media screen and (max-width: 600px) {
+            .column.side, .column.middle{ width: 100%;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column side">
+            <h3> Side Piece</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero architecto nemo voluptatum quam tempora quia minima, unde sapiente veritatis quibusdam, ipsam cumque perspiciatis reiciendis dolores? Nam non unde laboriosam, eum libero placeat ipsum sit quae! Temporibus deserunt doloribus placeat illum mollitia? Sapiente ducimus praesentium cum? Repellendus distinctio officiis nobis at. Omnis, corporis ipsa adipisci, deleniti fugiat sunt consequuntur rerum ipsam quam vero reprehenderit repellendus quidem consectetur, rem quo explicabo praesentium beatae eligendi nulla excepturi sint nesciunt! Aspernatur neque nulla soluta dolor, sint dolores debitis consequuntur itaque totam voluptates vel. Repudiandae fuga omnis odio voluptatum veniam nostrum quo aliquam, ad ex totam inventore? In doloremque beatae iure assumenda cupiditate numquam iste officiis. Veniam molestias eum, aperiam quam ex ab aliquid cumque molestiae quos id est velit quis? Deserunt quidem fugiat, quos itaque labore aliquid culpa mollitia, quaerat voluptas animi dolorem et vitae architecto illo illum.</p>
+        </div>
+        <div class="column middle">
+            <h3> Middle Piece</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ab sunt doloremque earum id quidem, incidunt ea obcaecati! Repudiandae maxime aliquam voluptatum hic, reprehenderit adipisci ullam porro temporibus, saepe ut magnam excepturi error illum quasi tempora labore debitis perspiciatis autem harum. Ratione doloribus necessitatibus minima, harum architecto corporis neque molestiae aut quod tempore voluptas fugit atque dignissimos laboriosam in iste est cum ipsum eos. Quibusdam ipsam pariatur deserunt eligendi, cupiditate autem illo quae sed. Odio nam possimus veniam voluptatum! Fuga mollitia saepe unde quos. Sed saepe corrupti numquam necessitatibus facere eligendi ullam tenetur expedita omnis ipsam consequuntur atque error obcaecati recusandae libero, aperiam eaque veniam, aliquam, vitae cumque optio sapiente ea natus! Assumenda sequi quasi deleniti impedit blanditiis, facilis nihil ipsam inventore deserunt placeat cum amet quod quis atque a maxime. Animi architecto autem, assumenda hic ex, quam ipsa earum asperiores, qui alias vel dolor minima nam provident error nobis rerum consectetur tenetur? Commodi autem corporis exercitationem odio illum ad voluptas dolores, a dicta rem, repellendus perspiciatis tempore molestiae facilis iusto numquam perferendis! Harum officia fuga ab laboriosam assumenda quis consectetur impedit aut voluptas suscipit at sapiente, nam natus voluptates dignissimos nobis? Labore architecto tempora possimus mollitia dolores. Quos unde amet recusandae blanditiis sequi expedita iusto corrupti. Praesentium dolor a nihil deserunt in ipsum ex debitis officiis dolorem natus id, corrupti quod laborum reiciendis minus exercitationem, tempore assumenda maiores nisi laboriosam! Illum natus assumenda omnis laboriosam, sunt ullam velit corporis itaque asperiores voluptate quas, hic, eligendi vero commodi sapiente? Ex reiciendis cupiditate, ab nam quasi fuga voluptates natus assumenda sit libero, distinctio dolores exercitationem doloribus necessitatibus sed dignissimos expedita pariatur reprehenderit sint rem ad, dolor voluptas. Quasi magnam illo suscipit aspernatur amet repellendus, corrupti laborum laudantium animi maiores ipsum minima quae voluptatibus quaerat, ea molestiae quibusdam perferendis sunt laboriosam neque eligendi dolore adipisci. Ipsa atque, in culpa maxime, reprehenderit quibusdam eum enim labore modi optio, consequuntur ducimus at? Debitis, dolor?</p>
+        </div>
+        <div class="column side">
+            <h3> Side Piece</h3>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda repudiandae blanditiis minima qui aut adipisci quia expedita provident accusamus enim excepturi esse laboriosam ea, ab accusantium laudantium eum debitis dolor beatae? Doloribus, quia dolor? Neque fuga possimus, perferendis, molestias, aliquid in ullam ipsa voluptas fugiat accusamus natus aut iste perspiciatis ad iusto velit. Cumque nemo nesciunt itaque quaerat sit sint eveniet ut necessitatibus facilis sunt quia nulla, ex et soluta fuga officia vel inventore corrupti dignissimos aliquid. Sed vero tenetur omnis non quam voluptatibus, odit cum laborum, eius ad excepturi. Incidunt rerum nostrum tenetur repudiandae quia quibusdam inventore aliquam! Dolore, provident? Minus quia molestias repellat vel a doloribus. Fugit, non sed quibusdam quasi totam magnam praesentium debitis. Consequuntur, tempore voluptates minus exercitationem id mollitia pariatur voluptate omnis tenetur beatae aliquam sint eaque quam. Ratione tempore sed nulla ipsam tempora nihil itaque voluptas. Exercitationem, doloremque cupiditate.</p>
+        </div>
+    </div>
+    <!--
+    <div class="grid-items">
+        <div> 1 </div>
+        <div> 2 </div>
+        <div> 3 </div>
+        <div> 4 </div>
+        <div> 5 </div>
+        <div> 6 </div>
+        <div> 7 </div>
+        <div id="first"> 8 </div>
+        <div> 9 </div>
+        <div> 10 </div>
+        <div> 11 </div>
+        <div> 12 </div>
+        <div> 13 </div>
+        <div> 14 </div>
+        <div> 15 </div>
+    </div>
+    <br>
+    <div class="grid-name">
+        <div class="item1"> Header </div>
+        <div class="item2">main </div>
+        <div class="item3">menu</div>
+        <div class="item4">right</div>
+        <div class="item5"> footer </div>
+    </div>
+    -->
+    
+</body>
+</html>

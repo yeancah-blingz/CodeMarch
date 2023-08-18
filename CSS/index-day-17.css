@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: purple;
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+    word-spacing: 50px;
+    text-indent: 950px;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+#main-body{
+    position: absolute;
+    top: 60px;
+}
+main{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+main h1{
+    color: purple;
+    margin: 10px;
+}
+#container{
+    background-color: rgb(232, 199, 232);
+    display: flex;
+    margin: 10px;
+    height: 300px;
+}
+img{
+    width: 400px;
+    height: 100%;
+}
+#sidebar-left{
+    padding: 20px;
+    text-align: justify;
+    line-height: 20px;
+}
+#sidebar-left h2{
+    margin: 15px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.pagination{
+    margin-top: 50px;
+    text-align: center;
+}
+.pagination a{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 2px solid #ddd;
+    margin: 0 4px;
+}
+.pagination a:hover{
+    background-color: orangered;
+    color: whitesmoke;
+}
+.pagination a:active{
+    background-color: lime;
+    color: black;
+}
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(236, 134, 236);
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 100%;
+    margin: -60px;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}

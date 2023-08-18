@@ -1,0 +1,25 @@
+ /* this is targeted at the h1 of the header, the header that preceeds the h1 waas to specify directly which h1 we would like the styling to target. this is m,ostly dont when there exist other h1 in the code */
+            header h1{
+                color: blue;
+            }
+            /* This is targetted at the header */
+            header{
+                background-color: #7fffd4;
+                margin: 10px;
+                padding: 30px;
+            }
+            /* This is targeted at the paragraph section of the code. it sets the color of text, background color of the box model containing the paragraph and also the margin and padding of the paragraph tag */
+            p{
+                color: rgb(255, 100, 162);
+                background-color: yellow;
+                margin: 10px;
+                padding: 18px;
+            }
+            /* This targets the class box */
+            .box{
+                height: 200px;
+                width: 200px;
+                border: 2px solid burlywood;
+                background-color: coral;
+                margin: auto;
+            }

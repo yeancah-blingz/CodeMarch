@@ -1,0 +1,31 @@
+/* styling the class container */
+.container{
+    border: 2px solid blue;
+    margin: 20px 15px;
+    padding: 15px;
+}
+/* styling the header element */
+header{
+    background-color: rgb(58, 120, 58);
+    height: 15vh;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+/* styling the main heading in the header element */
+header h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+/* styling the paragraph element */
+p{
+    background-color: tan;
+    font-size: 25px;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: center;
+}
+/* styling the icon element within the header element */
+header i{
+    font-size: 2.5em;
+}

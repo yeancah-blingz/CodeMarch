@@ -1,0 +1,16 @@
+/* this is an external CSS aimed at the list and h2 tag*/
+li{
+    color:navy;
+}
+h2{
+    color:red;
+}
+#header{
+    background-color: aquamarine;
+}
+.alpha{
+    background-color: lightcoral;
+}
+.beta{
+    background-color: tan;
+}

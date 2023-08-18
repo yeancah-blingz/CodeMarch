@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+}
+header{
+    background-color: grey;
+    color: whitesmoke;
+    height: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+header h1{
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 10px;
+}
+nav a{
+    padding: 25px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+nav a:hover{
+    color: orangered;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+.gallery img{
+    width: 320px;
+    border-radius: 10px;
+}
+.gallery img:hover{
+    transform: scale(1.04);
+}
+footer{
+    background-color: grey;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+}
+footer p{
+    color: whitesmoke;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bolder;
+}
+@media screen and (max-width: 600px) {
+    img{ width: 100%;}    
+}

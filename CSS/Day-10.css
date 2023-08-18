@@ -1,0 +1,21 @@
+body{
+    border: 2px solid black;
+}
+/* This is used to style the container class which was the paired tag that accomodate the inner class and the inner content. It helps to illustrate how box elements are been positioned and align within another box element */
+.container{
+    background-color: darkgreen;
+    margin: 20px;
+    padding: 20px;
+}
+/* The css property is used to style the inner content which are within the container */
+.inner{
+    background-color: tan;
+    margin: 5px;
+    padding: 15px;
+}
+/* This property is used to style the outer content which is not included in the container but can still stand on its own */
+.outer{
+    background-color: skyblue;
+    margin: 20px;
+    padding: 5px;
+}

@@ -1,0 +1,68 @@
+.container{
+    border: 2px solid rgba(1, 24, 1, 0.945);
+    margin: 15px 15px;
+    padding: 10px;
+
+}
+header{
+    background-image: linear-gradient(skyblue, rgb(177, 169, 169));
+    height: 18vh;
+    margin: 5px;
+    box-shadow: 3px 3px 5px rgb(231, 231, 12);
+    border-radius: 10px;
+}
+header h1, header p{
+    text-align: center;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px 5px;
+    line-height: 1.0;
+    margin: 5px;
+}
+header h1{
+    letter-spacing: 3px;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+header p{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.iform{
+    width: 980px;
+    height: 500px;
+    margin: 40px auto;
+    border: 2px solid skyblue;
+    padding: 18px;
+    background-image: linear-gradient(skyblue, rgb(177, 169, 169));
+    border-radius: 10px;
+    overflow: scroll;
+}
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid lightblue;
+    border-radius: 4px;
+}
+input{
+    height: 35px;
+    margin: 10px 0;
+    padding: 12px 0;
+}
+input[type="submit"]{
+    background-color: rgb(26, 5, 141);
+    height: 45px;
+    width: 85%;
+    display: block;
+    margin: 15px auto;
+    border-radius: 4px;
+    color: aliceblue;
+    font-size: 18px;
+    cursor: pointer;
+}
+label{
+    font-size: 20px;
+}
+textarea{
+    resize: horizontal;
+}
