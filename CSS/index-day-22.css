@@ -91,7 +91,7 @@ nav a:hover{
 .education{
     color: #e67e22;
 }
-section{
+.category{
     background-color: #211f24;
     color: whitesmoke;
 }
@@ -105,7 +105,7 @@ section{
 #sc-main h2{
     font-size: 25px;
 }
-#ft-main p{
+#sc-main p{
     margin-bottom: 40px;
 
 }
@@ -138,9 +138,193 @@ i{
     margin-top: 10px;
     font-size: 18px;
 }
-#sc-para{
+.sc-para{
     text-align: center justify;
+    margin-bottom: 20px;
 }
 .services{
     color: red;
+}
+.main-test{
+    background-color: #fdf2e9;
+     position: relative; 
+    padding-bottom: 30px;
+}
+.testimonial{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    padding: 40px 20px;
+    justify-content: center;
+}
+.test-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.test-card{
+    width: 300px;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.fa-star{
+    color: #f0932b;
+    margin-top: 10px;
+}
+.test-head{
+    position: absolute;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 15px;
+    top: 10px;
+    left: 40%;
+    text-align: center;
+    font-size: x-large;
+    border-bottom: 3px solid red;
+    padding-bottom: 25px;
+}
+.contact-sect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 960px;
+    padding: 40px;
+    gap: 35px;
+    overflow: hidden;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 80px; 
+}  
+.con-sect-input, textarea{
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin: 15px 0;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+input[type="submit"]{
+    border: unset;
+    border-radius: 20px;
+    background-color: navy;
+    color: whitesmoke;
+}
+.contact-us {
+    width: 60%;
+    height: 300px;
+}
+#contact-us-head{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: xx-large;
+}
+form{
+    padding: 20px;
+}
+textarea{
+    margin-bottom: 25px;
+    height: 50px;
+}
+.contact-info{
+    width: 40%;
+    height: 300px;
+    padding: 20px;
+    text-align: left;
+    margin-right: -60px;
+    border-radius: 14px;
+    background-color: #24252a;
+    color: whitesmoke;
+}
+.contact-info > h1 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-align: left;
+}
+.contact-info > p {
+    margin: 3px 18px;
+}
+.social-link {
+    margin-top: 50px;
+    text-align: right;
+    padding-right: 40px;
+    word-spacing: 30px;
+}
+.fa-twitter, .fa-facebook, .fa-instagram, .fa-headset, .fa-envelope-open-text, .fa-map-location-dot {
+    color: whitesmoke;
+}
+.fa-headset, .fa-envelope-open-text, .fa-map-location-dot {
+    margin-right: 10px;
+}
+.fa-twitter, .fa-facebook, .fa-instagram {
+    font-size: x-large;
+    margin-bottom: 5px;
+}
+#project-footer {
+    background-color: #151414;
+    padding: 25px;
+    color: whitesmoke;
+} 
+.footer-main {
+    display: flex;
+    justify-content: space-evenly;
+    width: 960px;
+    margin: 0 auto;
+}
+.ft-main {
+    width: 320px;
+    padding: 20px;
+}
+.anchor ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    list-style: none;
+    margin-top: 10px;
+    column-gap: 80px;
+}
+.anchor li {
+    line-height: 30px;
+}
+.anchor a {
+    text-decoration: none;
+    color: grey;
+}
+.ft-social-media {
+    word-spacing: 80px;
+}
+.ft-social-media h2 {
+    word-spacing: normal;
+    margin-bottom: 20px;
+}
+.ft-input {
+    display: inline-block;
+    height: 30px;
+    margin-top: 45px;
+}
+.ft-input[type="text"] {
+    background-color: #2e2e2e;
+    padding: 10px;
+}
+.ft-input[type="button"] {
+    background-color: #f70037;
+    width: 70px;
+}
+.footer-end {
+    background-color: #202020;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: grey;
+    margin-bottom: 20px;
+}
+.footer-end > p {
+    font-size: 18px;
 }

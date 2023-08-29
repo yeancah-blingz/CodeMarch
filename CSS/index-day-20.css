@@ -27,6 +27,7 @@ nav ul a{
 .navbar a:hover{
     background-color: aqua;
     color: coral;
+    overflow: hidden;
 }
 .container{
     background-image: url(../Images/bruce-mars-fiEG-Pk6ZyA-unsplash.jpg);
@@ -81,11 +82,13 @@ nav ul a{
     margin-bottom: 10px;
 }
 .flex-item button{
+    display: block;
     height: 35px;
     width: 100px;
+    margin: 0 auto;
     border-radius: 10px;
     border: 2px solid #ccc;
-    margin: 0 40%;
+   /* margin: 0 40%; */
     cursor: pointer;
 }
 .sect-image{
@@ -95,37 +98,63 @@ nav ul a{
 }
 .contact-area{
     display: flex;
+    justify-content: space-evenly;
+    padding: 20px 25px;
+    gap: 30px;
 }
 .contact-image, .contact-form{
-    flex-direction: row;
+   /* margin: 10px 15px; */ 
     width: 50%;
-    margin: 20px;
-}
-.contact-image{
-    margin-right: 0;
-    margin-left: 80px;
-}
-.contact-form{
-    border: 1px solid red;
-    margin-left: -60px;
-}
-input, textarea{
-    display: block;
-    width: 100%;
-    height: 30px;
-    margin: 10px 0;
-}
-textarea{
-    height: 100px;
 }
 .form-image{
-    width: 450px;
+    display: block;
+    width: 500px;
+    height: 500px;
+    margin: 15px auto;
+    border-radius: 8px;
 }
-form{
-    padding-top: 30px;
+label{
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+label:first-child{
+    margin-top: 40px;
+}
+label, input, textarea{
+    display: block;
+    margin: 15px 0;
+}
+input, textarea{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.contact-form{
+    padding: 15px;
+}
+textarea{
+    height: 150px;
 }
 #cont-btn{
-    width: 100px;
-    height: 35px;
-    margin: auto;
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin: 25px auto;
+    border-radius: 5px;
+    background-color: gray;
+    cursor: pointer;
+}
+footer{
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    background-color: skyblue;
+    padding: 10px;
+}
+span{
+    font-weight: bolder
 }
